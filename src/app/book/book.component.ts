@@ -12,7 +12,7 @@ export class BookComponent implements OnInit {
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
-    let response=this.http.get("http://localhost:4200/findAllBooks");
+    let response=this.http.get("http://localhost:8096/findAllBooks");
     response.subscribe((data)=>this.books=data)
   }
 
